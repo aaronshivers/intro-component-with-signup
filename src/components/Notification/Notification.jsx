@@ -1,11 +1,19 @@
 import React from 'react';
-
-const text = 'Try it free 7 days then $20/mo. thereafter';
+import {
+  Body,
+  Paragraph,
+  Bold,
+  Wrapper,
+} from './Notification.styles';
 
 const Notification = () => (
-  <div>
-    {text}
-  </div>
+  <Wrapper>
+    <Paragraph>
+      <Bold>Try it free 7 days</Bold>
+      {' '}
+      then $20/mo. thereafter
+    </Paragraph>
+  </Wrapper>
 );
 
 export default Notification;

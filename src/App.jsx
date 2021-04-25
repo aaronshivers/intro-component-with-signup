@@ -1,15 +1,12 @@
 import React from 'react';
-import Header from './components/Header';
-import Info from './components/Info';
-import Notification from './components/Notification';
-import Form from './components/Form';
+import { Normalize } from 'styled-normalize';
+import GlobalStyle from './App.styles';
+import SignupApp from './SignupApp';
 
 const App = () => (
   <>
-    <Header />
-    <Info />
-    <Notification />
-    <Form />
+    <GlobalStyle />
+    <SignupApp />
   </>
 );
 

@@ -1,12 +1,16 @@
 import React from 'react';
+import { Body, Anchor, Wrapper } from './Terms.styles';
 
 const Terms = () => (
-  <div>
-    By clicking the button, you are agreeing to our
-    <button type="button">
-      Terms and Services
-    </button>
-  </div>
+  <Wrapper>
+    <Body>
+      By clicking the button, you are agreeing to our
+      {' '}
+      <Anchor>
+        Terms and Services
+      </Anchor>
+    </Body>
+  </Wrapper>
 );
 
 export default Terms;

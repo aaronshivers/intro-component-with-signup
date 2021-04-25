@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import App from './App';
+import Header from './components/Header';
 
 describe('App', () => {
   const app = shallow(<App />);
@@ -9,7 +10,7 @@ describe('App', () => {
     expect(app).toMatchSnapshot();
   });
 
-  it('should have the text `Hello!!!`', () => {
-    expect(app.text()).toBe('Hello!!!');
+  it('should contain the Header component', () => {
+    expect(app.exists(Header)).toBeTruthy();
   });
 });

@@ -17,6 +17,12 @@ const Body = styled.p`
   text-align: center;
   line-height: 2.5rem;
   font-weight: ${weights.medium};
+
+  @media (min-width: ${breakPoints.desktop}) {
+    text-align: left;
+    line-height: ${sizes.extraLarge};
+    font-size: ${sizes.large};
+  }
 `;
 
 export { Wrapper, Body };

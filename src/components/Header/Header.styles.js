@@ -19,6 +19,12 @@ const Title = styled.h1`
   color: ${colors.white};
   font-size: ${sizes.extraLarge};
   font-weight: ${weights.bold};
+
+  @media (min-width: ${breakPoints.desktop}) {
+    text-align: left;
+    line-height: 7rem;
+    font-size: 6rem;
+  }
 `;
 
 export { Wrapper, Title };

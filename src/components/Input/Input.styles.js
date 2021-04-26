@@ -7,7 +7,6 @@ const {
 } = styleSettings;
 
 const Wrapper = styled.div`
-  //width: 100%;
   margin: ${sizes.medium} 0 0;
 `;
 
@@ -35,13 +34,12 @@ const StyledInput = styled.input`
   text-transform: capitalize;
   border-radius: 5px;
   border: 1px solid ${colors.grayishBlue};
-  
-  //&:focus, &:active {
-  //  border: none;
-  //}
+
+  :focus {
+    outline: none;
+  }
 
   &.error {
-    //padding: 10px 30px;
     border-color: ${colors.red};
   }
 `;

@@ -8,7 +8,7 @@ const Input = ({
   <Wrapper>
     <Label className={errors ? 'error' : ''}>
       <StyledInput
-        className={errors && 'error'}
+        className={errors ? 'error' : ''}
         type={type}
         name={name}
         onChange={onChange}
@@ -20,10 +20,6 @@ const Input = ({
   </Wrapper>
 );
 
-Input.defaultProps = {
-  errors: null,
-};
-
 Input.propTypes = {
   type: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
@@ -31,7 +27,7 @@ Input.propTypes = {
   onBlur: PropTypes.func.isRequired,
   value: PropTypes.string.isRequired,
   placeholder: PropTypes.string.isRequired,
-  errors: PropTypes.objectOf(PropTypes.any.isRequired),
+  errors: PropTypes.bool.isRequired,
 };
 
 export default Input;

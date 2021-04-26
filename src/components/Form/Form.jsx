@@ -60,7 +60,7 @@ const Form = () => (
             onBlur={handleBlur}
             value={values.firstName}
             placeholder="first name"
-            errors={errors.firstName}
+            errors={errors.firstName && touched.firstName}
           />
           <ErrorMessage
             name="firstName"
@@ -74,7 +74,7 @@ const Form = () => (
             onBlur={handleBlur}
             value={values.lastName}
             placeholder="last name"
-            errors={errors.lastName}
+            errors={errors.lastName && touched.lastName}
           />
           <ErrorMessage
             name="lastName"
@@ -88,7 +88,7 @@ const Form = () => (
             onBlur={handleBlur}
             value={values.email}
             placeholder="email"
-            errors={errors.email}
+            errors={errors.email && touched.email}
           />
           <ErrorMessage
             name="email"
@@ -102,7 +102,7 @@ const Form = () => (
             onBlur={handleBlur}
             value={values.password}
             placeholder="password"
-            errors={errors.password}
+            errors={errors.password && touched.password}
           />
           <ErrorMessage
             name="password"

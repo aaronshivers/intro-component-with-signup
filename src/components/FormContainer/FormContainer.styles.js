@@ -10,10 +10,6 @@ const Wrapper = styled.div`
   border-radius: 10px;
   margin-bottom: ${sizes.medium};
   padding: ${sizes.large};
-
-  @media (min-width: ${breakPoints.desktop}) {
-    margin-bottom: ${sizes.extraLarge};
-  }
 `;
 
 // eslint-disable-next-line import/prefer-default-export

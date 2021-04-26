@@ -2,7 +2,7 @@
   "name": "intro-component-with-signup",
   "version": "1.0.0",
   "main": "index.js",
-  "homepage": "htps://aaronshivers.github.io/intro-component-with-signup",
+  "homepage": "https://aaronshivers.github.io/intro-component-with-signup/",
   "repository": "git@github.com:/aaronshivers/intro-component-with-signup.git",
   "author": "aaronshivers <42848750+aaronshivers@users.noreply.github.com>",
   "license": "MIT",
@@ -11,7 +11,8 @@
     "test": "jest src/",
     "lint": "eslint src/**/*.{js,jsx} --fix",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist",
+    "build": "parcel build public/index.html"
   },
   "engines": {
     "node": "^14.16.1",

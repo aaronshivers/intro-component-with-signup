@@ -7,16 +7,16 @@
   "author": "aaronshivers <42848750+aaronshivers@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "start": "parcel public/index.html --out-dir build",
+    "start": "parcel public/index.html",
     "test": "jest src/",
     "lint": "eslint src/**/*.{js,jsx} --fix",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "parcel build public/index.html --out-dir build"
+    "build": "parcel build public/index.html"
   },
   "engines": {
     "node": "^14.0.0",
-    "yarn": "^1.22.10"
+    "yarn": "^1.22.4"
   },
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.13.15",

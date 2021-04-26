@@ -1,8 +1,7 @@
 import React from 'react';
 import {
-  Body,
-  Paragraph,
   Bold,
+  Paragraph,
   Wrapper,
 } from './Notification.styles';
 

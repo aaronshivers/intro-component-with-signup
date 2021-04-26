@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import styleSettings from '../../styleSettings';
 
 const {
-  sizes, breakPoints, weights, colors,
+  sizes, weights, colors,
 } = styleSettings;
 
 const Wrapper = styled.div`

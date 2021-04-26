@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import styleSettings from '../../styleSettings';
 
 const {
-  sizes, breakPoints, weights, colors,
+  sizes, breakPoints, colors,
 } = styleSettings;
 
 const Wrapper = styled.div`
@@ -16,4 +16,5 @@ const Wrapper = styled.div`
   }
 `;
 
+// eslint-disable-next-line import/prefer-default-export
 export { Wrapper };

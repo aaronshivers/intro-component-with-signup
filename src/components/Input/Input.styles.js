@@ -3,7 +3,7 @@ import styleSettings from '../../styleSettings';
 import errorImage from '../../assets/images/icon-error.svg';
 
 const {
-  sizes, breakPoints, weights, colors,
+  sizes, weights, colors,
 } = styleSettings;
 
 const Wrapper = styled.div`

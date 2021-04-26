@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   border-radius: 10px;
   margin: ${sizes.extraLarge} 0;
   padding: ${sizes.extraLarge} 4rem;
-  
+
   @media (min-width: ${breakPoints.desktop}) {
     margin-bottom: ${sizes.extraLarge};
   }

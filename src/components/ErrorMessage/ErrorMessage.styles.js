@@ -2,12 +2,8 @@ import styled from 'styled-components';
 import styleSettings from '../../styleSettings';
 
 const {
-  colors, sizes, breakPoints, weights,
+  colors, sizes,
 } = styleSettings;
-
-const Wrapper = styled.div`
-  //margin: 0;
-`;
 
 const Text = styled.p`
   text-align: right;
@@ -17,4 +13,5 @@ const Text = styled.p`
   margin: 0;
 `;
 
-export { Wrapper, Text };
+// eslint-disable-next-line import/prefer-default-export
+export { Text };

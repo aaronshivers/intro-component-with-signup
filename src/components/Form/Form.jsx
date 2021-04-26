@@ -3,7 +3,6 @@ import { Formik } from 'formik';
 import Input from '../Input';
 import ErrorMessage from '../ErrorMessage';
 import Button from '../FormButton';
-import { Wrapper } from './Form.styles';
 
 const onFormValidate = (values) => {
   const errors = {};
@@ -32,88 +31,84 @@ const onFormValidate = (values) => {
 };
 
 const Form = () => (
-  <Wrapper>
-    <Formik
-      initialValues={{
-        firstName: '', lastName: '', email: '', password: '',
-      }}
-      validate={onFormValidate}
-      onSubmit={({ setSubmitting }) => {
-        setSubmitting(false);
-      }}
-    >
-      {({
-        values,
-        errors,
-        touched,
-        handleChange,
-        handleBlur,
-        handleSubmit,
-        isSubmitting,
-        /* and other goodies */
-      }) => (
-        <form onSubmit={handleSubmit}>
-          <Input
-            type="firstName"
-            name="firstName"
-            onChange={handleChange}
-            onBlur={handleBlur}
-            value={values.firstName}
-            placeholder="first name"
-            errors={errors.firstName && touched.firstName}
-          />
-          <ErrorMessage
-            name="firstName"
-            errors={errors}
-            touched={touched}
-          />
-          <Input
-            type="lastName"
-            name="lastName"
-            onChange={handleChange}
-            onBlur={handleBlur}
-            value={values.lastName}
-            placeholder="last name"
-            errors={errors.lastName && touched.lastName}
-          />
-          <ErrorMessage
-            name="lastName"
-            errors={errors}
-            touched={touched}
-          />
-          <Input
-            type="email"
-            name="email"
-            onChange={handleChange}
-            onBlur={handleBlur}
-            value={values.email}
-            placeholder="email"
-            errors={errors.email && touched.email}
-          />
-          <ErrorMessage
-            name="email"
-            errors={errors}
-            touched={touched}
-          />
-          <Input
-            type="password"
-            name="password"
-            onChange={handleChange}
-            onBlur={handleBlur}
-            value={values.password}
-            placeholder="password"
-            errors={errors.password && touched.password}
-          />
-          <ErrorMessage
-            name="password"
-            errors={errors}
-            touched={touched}
-          />
-          <Button />
-        </form>
-      )}
-    </Formik>
-  </Wrapper>
+  <Formik
+    initialValues={{
+      firstName: '', lastName: '', email: '', password: '',
+    }}
+    validate={onFormValidate}
+    onSubmit={({ setSubmitting }) => {
+      setSubmitting(false);
+    }}
+  >
+    {({
+      values,
+      errors,
+      touched,
+      handleChange,
+      handleBlur,
+      handleSubmit,
+    }) => (
+      <form onSubmit={handleSubmit}>
+        <Input
+          type="firstName"
+          name="firstName"
+          onChange={handleChange}
+          onBlur={handleBlur}
+          value={values.firstName}
+          placeholder="first name"
+          errors={errors.firstName && touched.firstName}
+        />
+        <ErrorMessage
+          name="firstName"
+          errors={errors}
+          touched={touched}
+        />
+        <Input
+          type="lastName"
+          name="lastName"
+          onChange={handleChange}
+          onBlur={handleBlur}
+          value={values.lastName}
+          placeholder="last name"
+          errors={errors.lastName && touched.lastName}
+        />
+        <ErrorMessage
+          name="lastName"
+          errors={errors}
+          touched={touched}
+        />
+        <Input
+          type="email"
+          name="email"
+          onChange={handleChange}
+          onBlur={handleBlur}
+          value={values.email}
+          placeholder="email"
+          errors={errors.email && touched.email}
+        />
+        <ErrorMessage
+          name="email"
+          errors={errors}
+          touched={touched}
+        />
+        <Input
+          type="password"
+          name="password"
+          onChange={handleChange}
+          onBlur={handleBlur}
+          value={values.password}
+          placeholder="password"
+          errors={errors.password && touched.password}
+        />
+        <ErrorMessage
+          name="password"
+          errors={errors}
+          touched={touched}
+        />
+        <Button />
+      </form>
+    )}
+  </Formik>
 );
 
 export default Form;

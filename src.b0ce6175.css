@@ -1,0 +1,20 @@
+label.error {
+  position: relative;
+}
+
+label.error:after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  background: url(/icon-error.5a859353.svg) center / contain no-repeat;
+}
+
+input.error {
+  padding: 10px 30px;
+}
+
+
+/*# sourceMappingURL=/src.b0ce6175.css.map */

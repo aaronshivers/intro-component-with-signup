@@ -1,7 +1,6 @@
 import React from 'react';
-import { Normalize } from 'styled-normalize';
 import GlobalStyle from './App.styles';
-import SignupApp from './SignupApp';
+import SignupApp from './components/SignupApp';
 
 const App = () => (
   <>

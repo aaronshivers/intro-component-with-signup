@@ -1,7 +1,7 @@
 {
   "name": "intro-component-with-signup",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.html",
   "homepage": "https://aaronshivers.github.io/intro-component-with-signup/",
   "repository": "git@github.com:/aaronshivers/intro-component-with-signup.git",
   "author": "aaronshivers <42848750+aaronshivers@users.noreply.github.com>",
